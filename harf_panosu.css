@@ -105,6 +105,21 @@ body {
     position: absolute;
     border-radius: 50%;
 }
+.afis {
+    position: absolute; /* Topların konumu için mutlaka bir relative parent olmalı */
+    top: 50px; /* İstenilen konum */
+    left: 50%; /* Orta hizalama */
+    transform: translateX(-50%); /* Orta hizalama */
+    background-color: #7ecf89; /* Arka plan rengi */
+    color: #ffffff; /* Yazı rengi */
+    padding: 10px; /* İç boşluk */
+    text-align: center; /* Metni ortala */
+    border-radius: 10px; /* Köşeleri yuvarla */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Gölge */
+    font-size: 24px; /* Yazı boyutu */
+    z-index: 999; /* Diğer elementlerin önünde */
+}
+
 
 #ballRed {
     width: 50px;
